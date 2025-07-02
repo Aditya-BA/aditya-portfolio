@@ -11,6 +11,7 @@
       background: linear-gradient(to right, #cde7ff, #d0ffef);
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       color: #000;
+      animation: fadeIn 1.5s ease-in;
     }
     header {
       background-color: #fff;
@@ -33,10 +34,11 @@
       border-radius: 6px;
       font-weight: bold;
       cursor: pointer;
-      transition: background-color 0.3s ease;
+      transition: background-color 0.3s ease, transform 0.3s ease;
     }
     nav button:hover {
       background-color: #003366;
+      transform: scale(1.05);
     }
     .content {
       padding: 3rem;
@@ -46,6 +48,7 @@
       width: 90%;
       max-width: 1000px;
       backdrop-filter: blur(10px);
+      animation: slideIn 1.2s ease;
     }
     .content h2 {
       font-size: 2rem;
@@ -57,6 +60,20 @@
       line-height: 1.6;
       color: #222;
       margin-bottom: 1.5rem;
+      animation: fadeInText 1s ease forwards;
+      opacity: 0;
+    }
+    .content p:nth-child(2) {
+      animation-delay: 0.5s;
+    }
+    .content p:nth-child(3) {
+      animation-delay: 1s;
+    }
+    .content p:nth-child(4) {
+      animation-delay: 1.5s;
+    }
+    .content p:nth-child(5) {
+      animation-delay: 2s;
     }
     footer {
       text-align: center;
@@ -67,6 +84,17 @@
     footer a {
       color: #90e0ef;
       text-decoration: none;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes slideIn {
+      from { transform: translateY(30px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    @keyframes fadeInText {
+      to { opacity: 1; }
     }
   </style>
 </head>

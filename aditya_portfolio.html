@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aditya Khandelwal | Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #cde7ff, #d0ffef);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #000;
+    }
+    header {
+      background-color: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    header h1 {
+      font-size: 1.2rem;
+      color: #333;
+    }
+    nav button {
+      margin: 0 0.5rem;
+      padding: 0.5rem 1.2rem;
+      background-color: #000;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    nav button:hover {
+      background-color: #003366;
+    }
+    .hero {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 3rem;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      margin: 3rem auto;
+      width: 90%;
+      max-width: 1200px;
+      backdrop-filter: blur(10px);
+    }
+    .hero-text {
+      flex: 1;
+      padding-right: 2rem;
+      animation: slideInLeft 1.5s ease-out;
+    }
+    .hero-text h2 {
+      font-size: 2rem;
+      color: #111;
+    }
+    .hero-text p {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #222;
+    }
+    .hero-image {
+      flex: 0 0 300px;
+      text-align: center;
+      animation: slideInRight 1.5s ease-out;
+    }
+    .hero-image img {
+      width: 100%;
+      max-width: 250px;
+      border-radius: 50%;
+      border: 4px solid #003366;
+    }
+    .hero-image h1 {
+      margin-top: 1rem;
+      font-size: 1.2rem;
+      color: #003366;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #003366;
+      color: white;
+    }
+    footer a {
+      color: #90e0ef;
+      text-decoration: none;
+    }
+    @keyframes slideInLeft {
+      from { transform: translateX(-100%); opacity: 0; }
+      to { transform: translateX(0); opacity: 1; }
+    }
+    @keyframes slideInRight {
+      from { transform: translateX(100%); opacity: 0; }
+      to { transform: translateX(0); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Aditya's Portfolio</h1>
+    <nav>
+      <button onclick="location.href='experience.html'">Experience</button>
+      <button onclick="location.href='research-paper.html'">Research Paper</button>
+      <button onclick="location.href='achievements.html'">Achievements</button>
+      <button onclick="location.href='journey.html'">My Journey</button>
+      <button onclick="location.href='https://www.linkedin.com/in/aditya-khandelwal1402'">LinkedIn</button>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h2>About Me</h2>
+      <p>I’m a Business Analyst with over 5 years of experience and a strong foundation in analytics and systems transformation. During my MSc in Business Analytics at Dublin Business School, I immersed myself in key disciplines such as Business Intelligence, Applied Statistics, Programming for Analytics, and Project Management.</p>
+      <p>Through my coursework and practical projects, I gained hands-on experience building dashboards, automating reporting workflows, and applying predictive models to solve real-world business problems. My thesis project, which involved the use of deep learning for food recognition, further solidified my capability to use machine learning in innovative and impactful ways.</p>
+      <p>In a professional setting, I aim to bring this combined academic and practical knowledge to support data-driven decision-making, streamline operations, and enhance business intelligence.</p>
+    </div>
+    <div class="hero-image">
+      <img src="profile picture.png" alt="Aditya Khandelwal">
+      <h1>Aditya Khandelwal</h1>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Aditya Khandelwal | <a href="https://mail.google.com/mail/?view=cm&fs=1&to=tunewithaditya0@gmail.com" target="_blank">Email: tunewithaditya0@gmail.com</a></p>
+  </footer>
+</body>
+</html>

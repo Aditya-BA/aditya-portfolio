@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Journey | Aditya Khandelwal</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #cde7ff, #d0ffef);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #000;
+      animation: fadeIn 1.5s ease-in;
+    }
+    header {
+      background-color: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    header h1 {
+      font-size: 1.4rem;
+      color: #222;
+    }
+    nav button {
+      margin: 0 0.5rem;
+      padding: 0.5rem 1.2rem;
+      background-color: #000;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    nav button:hover {
+      background-color: #003366;
+      transform: scale(1.05);
+    }
+    .content {
+      padding: 3rem;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      margin: 3rem auto;
+      width: 90%;
+      max-width: 1000px;
+      backdrop-filter: blur(10px);
+      animation: slideIn 1.2s ease;
+    }
+    .content h2 {
+      font-size: 2rem;
+      color: #111;
+      margin-bottom: 1rem;
+    }
+    .content p {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #222;
+      margin-bottom: 1.5rem;
+      animation: fadeInText 1s ease forwards;
+      opacity: 0;
+    }
+    .content p:nth-of-type(1) { animation-delay: 0.4s; }
+    .content p:nth-of-type(2) { animation-delay: 0.9s; }
+    .content p:nth-of-type(3) { animation-delay: 1.4s; }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #003366;
+      color: white;
+    }
+    footer a {
+      color: #90e0ef;
+      text-decoration: none;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes slideIn {
+      from { transform: translateY(30px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    @keyframes fadeInText {
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Aditya's Portfolio</h1>
+    <nav>
+      <button onclick="location.href='index.html'">About</button>
+      <button onclick="location.href='experience.html'">Experience</button>
+      <button onclick="location.href='research-paper.html'">Research Paper</button>
+      <button onclick="location.href='achievements.html'">Achievements</button>
+      <button onclick="location.href='https://www.linkedin.com/in/aditya-khandelwal1402'">LinkedIn</button>
+    </nav>
+  </header>
+
+  <section class="content">
+    <h2>My Journey</h2>
+    <p>My professional journey began in India, where I worked at Genpact as a Business Analyst and Process Developer. This role shaped my core analytical capabilities and helped me master tools such as Salesforce, CORA, Oracle Financials, and Microsoft SQL. Working at the intersection of IT and finance, I collaborated on digital transformation projects and implemented automation that streamlined financial operations.</p>
+
+    <p>Motivated to expand my skillset and gain global exposure, I pursued a Post Graduate Diploma in Business Analytics with a specialization in Finance from Symbiosis, Pune. I then completed a Master’s degree (MSc) in Business Analytics from Dublin Business School, Ireland. This educational journey broadened my understanding of business strategy, data analytics, and artificial intelligence, and helped bridge the gap between academic theory and real-world application.</p>
+
+    <p>While in Ireland, I worked part-time in the restaurant industry, which provided both financial support and valuable experience in customer service, teamwork, and adaptability. The fast-paced hospitality environment helped sharpen my soft skills and gave me a deeper cultural understanding—enhancing my ability to work effectively in diverse teams and settings.</p>
+  </section>
+
+  <footer>
+    <p>© 2025 Aditya Khandelwal | <a href="https://mail.google.com/mail/?view=cm&fs=1&to=tunewithaditya0@gmail.com" target="_blank">Email: tunewithaditya0@gmail.com</a></p>
+  </footer>
+</body>
+</html>
